@@ -50,7 +50,6 @@ display(df)
 val df = spark.read
 .format("com.crealytics.spark.excel")
 .option("dataAddress", "planes!A1")
-.option("header", true)
 .load("/mnt/myblob/data.xlsx")
 
 display(df)
